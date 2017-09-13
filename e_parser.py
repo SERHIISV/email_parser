@@ -3,10 +3,10 @@ import os
 
 filepath = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'mbox.txt')
 
-edata = dict()
-
 
 def parse(filepath):
+    edata = dict()
+
     with open(filepath) as f:
         content = f.read()
 
